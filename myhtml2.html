@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- Floating Navigation Menu -->
+<div class="floating-nav">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+</div>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Healthworkers 4 Palestine in Belgium</h1>
+        </div>
+        <img src="images/logo.svg" alt="Logo" id="logo">
+    </header> 
+    <nav class="navigation">
+        <a href="#section1">Al Shifa hospital</a>
+        <a href="#section2">Section 2</a>
+        <a href="#about-us">About us</a>
+        <a href="#contact-us" id="show-contact">Contact Us</a>
+    </nav>   
+    <main>
+        <section id="section1">
+            <h2>Al Shifa hospital</h2>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme 
+                assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait 
+                que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en 
+                soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages 
+                du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. 
+                Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à 
+                un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous 
+                les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. 
+                Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" 
+                (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, 
+                est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", 
+                proviennent de la section 1.10.32.</p>
+        </section>
+        <section id="about-us">
+            <h2>About us</h2>
+            <p>Content for Section 1...</p>
+        </section>
+        <section>
+            <h2>Dynamic Content</h2>
+            <p id="dynamicContent">This content will change when the button is clicked.</p>
+            <button id="changeContentBtn">Change Content</button>
+        </section>
+        <!-- Contact Form Section -->
+        <section id="contact-us" class="hidden">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>     
+    </main>
+    <footer>
+        <p>To get involved and for more info <a href="#contact-us" id="footer-contact-link">Contact us</a>.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
